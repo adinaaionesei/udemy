@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <meta name="description" content="important-rules">
+        <title>Important-Rules</title>
+        <style type="text/css">
+            body{
+                color: red;
+            }
+            h1{
+                color: red!important;
+            }
+            p{
+                color: red;
+            }
+            #text-red{
+                color: red!important;
+            }
+            .text-red{
+                color: red;
+            }
+            h1#text-red{
+                color: red;
+            }
+            h1.text-red{
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+    <h1 style="color: green" class="text-red" id="text-red">headings</h1>
+    </body>
+</html>

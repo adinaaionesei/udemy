@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <meta name="description" content="Box margin">
+        <title>Box margin</title>
+        <style type="text/css">
+            .box250{
+                height: 250px;
+                width: 250px;
+                border: 5px solid green;
+                margin: 10px;
+            }
+            .minbox100{
+                margin: 10px;
+                min-width: 300px;
+                border: 5px solid green;
+                min-height: 300px;
+            }
+            .maxbox500{
+                margin: 10px;
+                max-width: 500px;
+                border: 5px solid green;
+                max-height: 500px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box250">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </div>
+        <div class="box250" style="padding: 20px;">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </div>
+        <div class="minbox100">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </div>
+        <div class="maxbox500">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </div>
+    </body>
+</html>
