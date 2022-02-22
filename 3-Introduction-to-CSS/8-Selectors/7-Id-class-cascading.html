@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Cascading-selectors-css">
+        <title>Cascading-selectors-css</title>
+
+        <style type="text/css">
+            div.color-red
+            {
+                color: red;
+            }
+            #color-red.align-center
+            {
+                color: red;
+                text-align: center;
+            }
+            #color-blue .text-underline
+            {
+                color: blue;
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="color-red">Multiple Class Selector - HTML TAG</h1>
+        <div class="color-red">
+            This is red color paragraph.
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </div>
+        <h1 id="color-red" class="align-center">Power of CSS!!!</h1>
+        <hr>
+        <div id="color-blue">
+            <h1 class="text-underline">
+                Cascaded CSS with Class & ID!!
+            </h1>
+        </div>
+    </body>
+</html>

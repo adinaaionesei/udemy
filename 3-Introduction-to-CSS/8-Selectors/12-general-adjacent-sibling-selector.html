@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="general-adjacent-selectors-css">
+        <title>general-adjacent-selectors-css</title>
+        <style type="text/css">
+            div ~ a {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <p class="">this is a <a href="">paragraph</a> of text</p>
+        <a href="">paragraph</a>
+        <hr>
+        <div>
+            <a href="">lorem ipsum</a>
+            <p>
+                <a href="">lorem ipsum</a>
+                This is some text
+            </p>
+        </div>
+        <div>
+            this is some text
+        </div>
+        <a href="">lorem ipsum</a>
+        <h1>another tag</h1>
+        <a href="">lorem ipsum</a>
+    </body>
+</html>

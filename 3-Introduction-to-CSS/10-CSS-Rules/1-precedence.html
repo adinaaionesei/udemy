@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <meta name="description" content="Css-order-precedence">
+        <title>Css-order-precedence</title>
+        <style type="text/css">
+            h1 {
+                color: blue;
+            }
+            p {
+                color: green;
+            }
+            p, h1 {
+                 color: red;
+             }
+            div {
+                color: red;
+            }
+            #text-blue{
+                color: blue;
+            }
+            .text-green{
+                color: green;
+            }
+            div#text-blue{
+                color: lightblue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Heading</h1>
+        <p>this is a text wich has first letter bigger</p>
+        <div id="text-blue" class="text-green">
+            css rule wich is more specific has more precedence.
+            <br>
+            id has more precedence than class.
+        </div>
+    </body>
+</html>
