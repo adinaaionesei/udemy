@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Page Description">
+        <title>Project 1: Simple Layout</title>
+        <style type="text/css">
+            *, *:before, *:after {
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+            body {
+                background-color: #0087E2;
+                color: white;
+                text-align: center;
+                margin: 0;
+                font-family: Helvetica;
+            }
+            .widthborderbox{
+                width: 300px;
+                height: 100px;
+                border: 1px solid white;
+                padding: 50px;
+                box-sizing: border-box;
+            }
+            .widthoutborderbox{
+                width: 300px;
+                height: 100px;
+                padding: 50px;
+                border: 1px solid white;
+            }
+        </style>
+    </head>
+    <body>
+    <div class="widthborderbox">with border box</div>
+    <div class="widthoutborderbox">without border box</div>
+    </body>
+</html>
