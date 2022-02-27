@@ -1,0 +1,43 @@
+.image{
+    position: absolute;
+    top: 5vh;
+    left: 3vw;
+    border-radius: 50%;
+}
+.desc{
+    position: absolute;
+    margin-left: 12cm;
+    margin-top: 2cm;
+    margin-bottom: 2cm;
+    margin-right: 1cm;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: #f1f1f1;
+}
+.posts{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+    background-color: #f1f1f1;
+}
+.nav-links{
+    color: black;
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.card {
+    display: table;
+}
+.main-image {
+    display: table-cell;
+}
+.content {
+    display: table-cell;
+    vertical-align: top;
+    padding: 30px;
+}
