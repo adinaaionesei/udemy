@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>Internal JavaScript</title>
+    <script>
+        function sum() {
+            var field1 = document.getElementById("add_field_1").value;
+            var field2 = document.getElementById("add_field_2").value;
+            var sum = parseInt(field1) + parseInt(field2);
+
+            document.getElementById("add_result").value = sum;
+        }
+        function dif() {
+            var field1 = document.getElementById("dif_field_1").value;
+            var field2 = document.getElementById("dif_field_2").value;
+            var dif = parseInt(field1) - parseInt(field2);
+
+            document.getElementById("dif_result").value = dif;
+        }
+        function multiple() {
+            var field1 = document.getElementById("multiple_field_1").value;
+            var field2 = document.getElementById("multiple_field_2").value;
+            var multiple = parseInt(field1) * parseInt(field2);
+
+            document.getElementById("multiple_result").value = multiple;
+        }
+        function divide() {
+            var field1 = document.getElementById("divide_field_1").value;
+            var field2 = document.getElementById("divide_field_2").value;
+            var divide = parseInt(field1) / parseInt(field2);
+
+            document.getElementById("divide_result").value = divide;
+        }
+
+    </script>
+    </head>
+    <body>
+        <div class="add">
+            <input type="text" id="add_field_1" /> +
+            <input type="text" id="add_field_2" /> =
+            <input type="text" readonly disabled id="add_result" />
+            <button onclick="sum()" id="sum">Sum</button>
+        </div>
+        <div class="dif">
+            <input type="text" id="dif_field_1" /> -
+            <input type="text" id="dif_field_2" /> =
+            <input type="text" readonly disabled id="dif_result" />
+            <button onclick="dif()" id="dif">Dif</button>
+        </div>
+        <div class="multiple">
+            <input type="text" id="multiple_field_1" /> *
+            <input type="text" id="multiple_field_2" /> =
+            <input type="text" readonly disabled id="multiple_result" />
+            <button onclick="multiple()" id="multiple">Multiple</button>
+        </div>
+        <div class="divide">
+            <input type="text" id="divide_field_1" /> /
+            <input type="text" id="divide_field_2" /> =
+            <input type="text" readonly disabled id="divide_result" />
+            <button onclick="divide()" id="divide">Divide</button>
+        </div>
+    </body>
+</html>

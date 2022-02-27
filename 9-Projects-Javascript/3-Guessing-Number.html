@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Internal JavaScript</title>
+        <script>
+            var message ="";
+            var answer = 5;
+            var counter = 1;
+            var flag = false;
+
+            do{
+                var input1 = prompt("Guess the nr from 1 to 10");
+                input1 = parseInt(input1);
+
+                if(input1 != answer){
+                    alert("no-wrong");
+                }else{
+                    flag = true;
+                    break;
+                }
+                if(counter == 3){
+                    break;
+                }
+
+                counter++;
+            }while(answer !=input1);
+            if(flag){
+                message += "you guessed right " + answer + " is the answer";
+            }else {
+                message += "sorry you didn't guessed ";
+            }
+        </script>
+    </head>
+    <body>
+        <h1>guess the nr</h1>
+        <script>
+            document.write(message);
+        </script>
+    </body>
+</html>
